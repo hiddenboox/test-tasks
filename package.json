@@ -1,0 +1,21 @@
+{
+  "name": "test-tasks",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "mocha --require esm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.2.0",
+    "esm": "^3.2.25",
+    "mocha": "^8.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
