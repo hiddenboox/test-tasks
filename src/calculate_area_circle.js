@@ -3,7 +3,13 @@ const calculateAreaCircle = (radius) => {
     throw new Error("radius should be provided");
   }
 
-  return radius * radius * Math.PI;
+  const rad = parseFloat(radius);
+
+  if (isNaN(rad)) {
+    throw new Error("radius should be a number");
+  }
+
+  return rad * rad * Math.PI;
 };
 
 export default calculateAreaCircle;

@@ -28,4 +28,8 @@ describe("calculateAreaCircle", () => {
   it("should throw on missing radius", () => {
     assert.throws(() => calculateAreaCircle());
   });
+
+  it("should throw if arg is not a number", () => {
+    assert.throws(() => calculateAreaCircle("at"));
+  });
 });
